@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ロビー画面 - ピクミン花育成</title>
+    <link rel="stylesheet" href="/css/lobby.css" />
+</head>
+<body>
+
+<header>
+    <h1>ようこそ、{{user.displayName}}さん！</h1>
+</header>
+
+<main>
+
+    <!-- 背景に咲いた花たち（動かせるイメージ） -->
+    <section id="flower-background">
+        <!-- JavaScriptで動的に花を配置・動かす想定 -->
+    </section>
+
+    <!-- 勤怠情報 -->
+    <section id="attendance">
+        <h2>勤怠情報</h2>
+        <p>今月の勤怠時間合計: <span id="monthly-hours">0時間</span></p>
+        <p>今日の勤怠時間タイマー: <span id="today-timer">00:00:00</span></p>
+        <button id="punch-in-btn">出勤打刻</button>
+        <button id="punch-out-btn">退勤打刻</button>
+    </section>
+
+    <!-- ログインボーナス -->
+    <section id="login-bonus">
+        <h2>今日のログインボーナス</h2>
+        <p>種をゲットしました！</p>
+        <p id="seed-name">レアフラワー42</p>
+    </section>
+
+    <!-- カレンダーリンク -->
+    <section id="calendar">
+        <a href="/calendar">カレンダーで過去の勤怠や開花状況をチェック</a>
+    </section>
+
+    <!-- 育成画面リンク -->
+    <section id="growth">
+        <a href="/growth">育成画面へ</a>
+    </section>
+
+    <!-- 図鑑リンク -->
+    <section id="flower-book">
+        <a href="/flower-book">図鑑・花一覧</a>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Pikumin Inc.</p>
+</footer>
+
+<script src="/js/lobby.js"></script>
+
+</body>
+</html>

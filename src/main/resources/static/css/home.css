@@ -1,0 +1,49 @@
+/* home.css */
+header {
+  background-color: #00796b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  max-width: 960px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.flower-bg {
+  height: 200px;
+  background: url('/images/flower-background.png') no-repeat center center;
+  background-size: contain;
+  margin-bottom: 1rem;
+}
+
+.attendance h2 {
+  margin-top: 0;
+}
+
+.timer {
+  font-size: 1.5rem;
+  color: #00796b;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.login-bonus {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #ffecb3;
+  border-radius: 6px;
+  font-weight: bold;
+}
