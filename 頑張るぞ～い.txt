@@ -1,0 +1,272 @@
+﻿🔷 全体構成
+1. ログイン画面
+ユーザーごとにログイン。
+
+ログイン時に「種」をランダムでもらえる（毎日）。
+
+2. 各ユーザー画面（ロビー画面）
+背景に咲かせた花を表示。
+
+勤怠時間の合計、タイマー表示。
+
+勤怠打刻ボタン・種セットボタン。
+
+3. サブ機能
+ログインボーナス（毎日ランダムで種を1つ）
+
+カレンダー（過去の勤怠や開花状況表示）
+
+種セット画面（スロット3つ、ストック10個まで）
+
+図鑑（咲かせた花を記録）
+
+4. マスター機能（管理者用）
+勤怠状況を確認・記録できる。
+
+必要に応じて「種」などの記録も追加可能。
+
+🔷 機能の詳細説明
+種の取得と育成
+
+ログインごとに1つ種をもらえる（レアも存在）
+
+3つまで同時育成可能（育てるのは1スロット1種）
+
+ストック上限：10個
+
+育成メカニズム
+
+30分ごとに1段階成長、最大5時間で開花
+
+達成感の可視化（例：バーやビジュアル）
+
+花の表示
+
+開花後はロビー画面に最大20個まで表示（順次消滅）
+
+図鑑要素
+
+名前・見た目・レアリティなどを記録・表示
+
+コレクション性を持たせて継続的なログインを促進
+
+🔷 技術要素
+使用技術：Java, Python, H2database
+
+🔷 画面構成イメージ（ワイヤーフレーム案）
+ログイン画面
+
+ホーム画面
+
+咲かせた花の表示
+
+勤怠ボタン
+
+ログインボーナス受取
+
+育成画面
+
+スロット別育成種表示
+
+図鑑
+
+月別／季節別
+
+咲かせた花一覧
+
+レア度表示など
+
+
+✅ ステップ1：要件整理（ざっくり再確認）
+項目	内容
+開発対象	勤怠＋花育成システム
+主な機能	ログイン、勤怠記録、種の取得と育成、花表示、図鑑、カレンダー、マスター管理
+使用技術	Java（or Python）、H2 Database、Webフロント（HTML/JSなど）
+想定画面数	5画面以上：ログイン・ホーム・育成・図鑑・管理者
+
+
+
+
+
+src/main/java/pikumin/
+├── controller/
+━E  ├── LoginController.java
+━E  ├── HomeController.java
+━E  ├── AttendanceController.java
+━E  ├── AdminController.java
+━E  └── FlowerController.java
+├── model/
+━E  ├── User.java
+━E  ├── Seed.java
+━E  ├── Flower.java
+━E  ├── Attendance.java
+━E  └── GrowthState.java
+├── repository/
+━E  ├── UserRepository.java
+━E  ├── SeedRepository.java
+━E  ├── FlowerRepository.java
+━E  └── AttendanceRepository.java
+├── service/
+━E  ├── LoginBonusService.java
+━E  ├── GrowthService.java
+━E  └── AdminService.java
+
+
+
+https://chatgpt.com/share/682443c0-64a0-800c-93bd-43b8cfd75787
+
+
+User ─┬──< Seed >──┬──< SeedLog >───1──> GrowthState
+      │             │
+      └──< Flower   │
+                    └── SeedRepository
+                         └─ (育成中の種の検索・登録など)
+
+
+✅ SeedRepository
+エンティティ: Seed
+
+主な責務:
+
+ユーザーが所持している種の取得・保存。
+
+「育成中の種」の検索（findByUserAndGrowingTrue）。
+
+所持数制限の判定などに使われる。
+
+使われる場所: SeedService, FlowerService
+
+✅ SeedLogRepository
+エンティティ: SeedLog
+
+主な責務:
+
+「いつどの種が育てられたか」などの履歴を管理。
+
+Seed と GrowthState を紐づける中間的存在。
+
+勤怠記録や時間経過により種の成長段階を記録。
+
+使われる場所: GrowthService, AdminService
+
+✅ GrowthStateRepository
+エンティティ: GrowthState
+
+主な責務:
+
+各種の成長状態（レベル・開花状態など）を保持・更新。
+
+SeedLog を通じて間接的に Seed に紐づく。
+
+使われる場所: GrowthService
+
+画面構成イメージ（ワイヤーフレーム案）
+
+
+
+ログイン画面
+
+各ユーザー画面（ロビー画面）
+
+
+自分が咲かせ花が背景に表示されてる（好きに動かせる） 
+
+今月の勤怠時間合計 
+今日の勤怠時間タイマー
+ 日勤退勤打刻ボタン 
+
+今日のログインボーナス（種GET）
+
+カレンダー画面
+（過去の日勤や開花状況を見返せる）
+
+
+
+育成画面（種セット画面） 
+育て中の種一覧（スロット3つ）
+
+成長度（プログレスバー）
+種の変更／削除
+
+
+
+図鑑・花一覧（月限定、季節限定有）
+咲かせた花一覧
+レア度・履歴表示など
+
+
+と、添削が出来る管理者専用ページ
+
+
+
+
+pikumin/
+├─ controller/         # 画面遷移や処理の入口（MVCのC）
+│  ├─ HomeController.java
+│  ├─ LoginController.java
+│  ├─ AttendanceController.java
+│  ├─ FlowerController.java
+│  └─ AdminController.java
+│
+├─ model/              # データ構造定義（MVCのM）＝ Entity
+│  ├─ User.java
+│  ├─ Seed.java
+│  ├─ Flower.java
+│  ├─ Attendance.java
+│  ├─ GrowthState.java
+│  └─ SeedLog.java
+│
+├─ repository/         # DBアクセス用インタフェース（Spring Data JPA）
+│  ├─ UserRepository.java
+│  ├─ SeedRepository.java
+│  ├─ FlowerRepository.java
+│  ├─ AttendanceRepository.java
+│  ├─ GrowthStateRepository.java
+│  └─ SeedLogRepository.java
+│
+├─ service/            # ビジネスロジック（育成・ログイン処理など）
+│  ├─ SeedService.java
+│  ├─ LoginBonusService.java
+│  ├─ GrowthService.java
+│  └─ FlowerService.java
+│
+├─ resources/
+│  ├─ static/          # 静的ファイル（CSS・画像など）
+│  │  └─ css/
+│  │     └─ style.css
+│  └─ templates/       # HTMLテンプレート（Thymeleaf）
+│     ├─ home.html
+│     ├─ login.html
+│     ├─ calendar.html
+│     ├─ grow.html
+│     ├─ flowerbook.html
+│     └─ admin.html
+│
+└─ application.properties（設定）
+
+
+🧾 機能別ファイル対応表（簡易一覧）
+分類	機能	主なファイル（例）
+ログイン	ログイン処理・ボーナス付与	LoginController, LoginBonusService, User
+ホーム画面	トップページ表示・花一覧	HomeController, home.html, FlowerService
+勤怠管理	日付の記録、打刻ボタン	AttendanceController, AttendanceService, Attendance
+育成	種の取得・成長・成長状態保存	SeedService, GrowthService, Seed, GrowthState, SeedLog
+図鑑表示	咲いた花の一覧、レア度表示	FlowerController, flowerbook.html, Flower
+カレンダー	過去勤怠・開花履歴表示	calendar.html（＋コントローラー未実装？）
+管理者	ユーザー管理・添削機能	AdminController, admin.html
+
+💡補足ポイント
+@Entityのあるクラス（例：User, Seed）はDBと連携
+
+RepositoryはSpring Data JPAが自動で実装
+
+Serviceが主なビジネス処理（育成、成長、ボーナスなど）を担う
+
+Controllerが各画面（HTML）との橋渡し
+
+resources/templates/ に Thymeleaf 用 HTML を置く（例：home.html）
+
+CSS や画像は resources/static/ に配置
+
+
+

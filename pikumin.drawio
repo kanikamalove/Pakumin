@@ -1,0 +1,119 @@
+<mxfile host="65bd71144e">
+    <diagram id="aVpgPj5JInHLROFK6Uxt" name="クラス図">
+        <mxGraphModel dx="1134" dy="938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#F3F3F3" math="0" shadow="1" adaptiveColors="auto">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--33" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;opacity=50;gradientColor=#99FF99;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="110" width="320" height="470" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--3" value="" style="edgeStyle=none;html=1;entryX=0.303;entryY=-0.006;entryDx=0;entryDy=0;exitX=0.325;exitY=0.976;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--1" target="OJN92Gb3l4fANl5nvqp--2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--13" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--1" target="OJN92Gb3l4fANl5nvqp--12">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--1" value="+ ログイン画面" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;glass=0;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="50" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--5" value="" style="edgeStyle=none;html=1;entryX=0.997;entryY=0.107;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--4" target="OJN92Gb3l4fANl5nvqp--2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--9" value="" style="edgeStyle=none;html=1;exitX=0.614;exitY=-0.005;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.663;entryY=0.988;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--2" target="OJN92Gb3l4fANl5nvqp--1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--22" value="" style="edgeStyle=none;html=1;entryX=-0.003;entryY=0.343;entryDx=0;entryDy=0;exitX=1.017;exitY=0.359;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--2" target="OJN92Gb3l4fANl5nvqp--16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--2" value="&lt;span style=&quot;background-color: transparent;&quot;&gt;ー 各ユーザー画面&lt;/span&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;（ロビー画面）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;背景に咲かせた花&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;（好きに動かせる）&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;今月の勤怠時間合計&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;今日の勤怠時間タイマ&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;日勤退勤打刻ボタン&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;種セットボタン&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;strokeWidth=3;glass=0;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="130" width="130" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--4" value="ログインボーナス&lt;div&gt;（強制）&lt;/div&gt;&lt;div&gt;（貰える種はランダム）&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=1;strokeWidth=3;glass=0;shadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="130" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--41" value="" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--12" target="OJN92Gb3l4fANl5nvqp--40">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--12" value="ー マスター権限" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="230" y="50" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--15" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.751;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--12">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="190" y="180" as="sourcePoint"/>
+                        <mxPoint x="290.31999999999994" y="108.12" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--26" value="" style="edgeStyle=none;html=1;entryX=1.003;entryY=0.426;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.014;exitY=0.659;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--16" target="OJN92Gb3l4fANl5nvqp--2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--16" value="カレンダー&lt;div&gt;（過去の日勤や開花状況を見返せる）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="210" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--27" value="" style="edgeStyle=none;html=1;exitX=-0.004;exitY=0.331;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.016;entryY=0.905;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--24" target="OJN92Gb3l4fANl5nvqp--2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--24" value="図鑑&lt;div&gt;（咲かせた花）&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="370" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--29" value="" style="endArrow=classic;html=1;exitX=1.002;exitY=0.951;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.003;entryY=0.665;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--2" target="OJN92Gb3l4fANl5nvqp--24">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="230" y="300" as="sourcePoint"/>
+                        <mxPoint x="280" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--31" value="" style="edgeStyle=none;html=1;entryX=1.018;entryY=0.665;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.001;exitY=0.434;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--30" target="OJN92Gb3l4fANl5nvqp--2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--30" value="種セット画面&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;（セットは3つまで）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;（ストックは10個まで）&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="290" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--32" value="" style="endArrow=classic;html=1;exitX=0.999;exitY=0.734;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.007;entryY=0.765;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="OJN92Gb3l4fANl5nvqp--2" target="OJN92Gb3l4fANl5nvqp--30">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="190" y="360" as="sourcePoint"/>
+                        <mxPoint x="240" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--35" value="&lt;b&gt;&lt;u&gt;機能&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;説明&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;ログイン時に「種」をランダムで1つもらえる&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;（毎日）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;種にレア度有、継続ログインでレアが出やすくなる&lt;/span&gt;&lt;br&gt;（継続促進のため）&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;好きな種を育てられる（最大3個、育つのは1つずつ）&lt;/div&gt;&lt;div&gt;&amp;nbsp;もらった種の中から好きなものを「育成スロット」にセットできる&lt;/div&gt;&lt;div&gt;（ストック10個まで）&lt;/div&gt;&lt;div&gt;&lt;br&gt;勤務時間に応じて成長&lt;/div&gt;&lt;div&gt;30分ごとに1段階成長、通算5時間（＝10段階）で開花&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;（達成感の可視化、開花というビジュアル報酬）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;花が咲いたらログイン画面に飾られる&lt;/div&gt;&lt;div&gt;最大20日間表示、以降は枯れて消える&lt;/div&gt;&lt;div&gt;&lt;br&gt;花の種類は季節によって変わっていく&lt;/div&gt;&lt;div&gt;種の名前・見た目・レアリティなども図鑑で管理、見返せる&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;（コレクション要素、レア花などを揃える）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;マスター（管理者）は全ユーザーの勤怠状況を確認、添削できる&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;color: rgb(63, 63, 63);&quot;&gt;添削した日時記録は全て残る&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;（勤怠集計表が見れると尚良い）&lt;/b&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="640" width="390" height="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--36" value="&lt;b&gt;&lt;u&gt;画面構成イメージ（ワイヤーフレーム案）&lt;/u&gt;&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;ログイン画面&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;自分が咲かせ花が表示されてる&lt;span style=&quot;background-color: transparent;&quot;&gt;ホーム画面&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;勤怠ボタンを押す&lt;/div&gt;&lt;div&gt;今日のログインボーナス（種GET）&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;育成画面&lt;/div&gt;&lt;div&gt;育て中の種一覧（スロット3つ）&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;成長度（プログレスバー）&lt;/div&gt;&lt;div&gt;種の変更／削除&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;図鑑・花一覧（月限定、季節限定有）&lt;/div&gt;&lt;div&gt;咲かせた花一覧&lt;/div&gt;&lt;div&gt;レア度・履歴表示など&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="640" width="330" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--37" value="&lt;b&gt;JAVA、Python、H2datebase&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=3;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+                    <mxGeometry x="460" y="1000" width="330" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--39" value="&lt;b&gt;H2datebase&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="70" y="430" width="280" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="OJN92Gb3l4fANl5nvqp--40" value="添削記録" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="50" width="120" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="joAx0KqKpjRWz3t72Dot" name="ページ1">
+        <mxGraphModel dx="667" dy="1752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#E6E6E6" math="0" shadow="1">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="" style="edgeStyle=none;html=1;" parent="1" source="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="175" y="-1000" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="&lt;b&gt;&amp;nbsp;フロントエンド（Web UI）&lt;/b&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;div&gt;HTML/CSS/JavaScript（React等も可）&lt;/div&gt;&lt;div&gt;勤務カレンダー、図鑑など&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="-1130" width="270" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="edgeStyle=none;html=1;" parent="1" source="3" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;b&gt;&amp;nbsp;バックエンド（Spring Boot / Java）&lt;/b&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;div&gt;&amp;nbsp;[コントローラー層]&amp;nbsp;&lt;/div&gt;&lt;div&gt;REST API（ユーザー・勤務・育成）&lt;/div&gt;&lt;div&gt;&amp;nbsp;[サービス層]&amp;nbsp;&lt;/div&gt;&lt;div&gt;業務ロジック（勤務処理、花成長計算）&lt;/div&gt;&lt;div&gt;[リポジトリ層]&amp;nbsp;&lt;/div&gt;&lt;div&gt;DBとのやりとり（JPA / JDBC）&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;　Pythonスクリプトで成長処理のバッチも可 　&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="-1000" width="270" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;b&gt;&amp;nbsp; データベース（H2 Database）&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;users, seeds, flowers, work_records&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;ユーザーごとの花や成長情報を永続化&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="-780" width="270" height="90" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

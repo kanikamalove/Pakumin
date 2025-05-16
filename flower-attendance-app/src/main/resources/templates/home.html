@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>ホーム</title>
+</head>
+<body>
+    <h2>ようこそ [[${username}]] さん</h2>
+    <form action="/punch-in" method="post"><button>出勤</button></form>
+    <form action="/punch-out" method="post"><button>退勤</button></form>
+    <p>今日の勤務時間: [[${workTime}]] 分</p>
+</body>
+</html>
