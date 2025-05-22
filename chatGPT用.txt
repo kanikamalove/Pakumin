@@ -1,0 +1,78 @@
+これはSpring Bootで作っている勤怠×花育成アプリです。
+前回までの構成と説明は以下の通りです（↓）。
+
+
+
+🌱 アプリ全体構成図（概要）
+csharp
+コピーする
+編集する
+pakumin/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── pikumin/
+│   │   │       ├── PikuminApplication.java       # アプリの起動クラス
+│   │   │       ├── controller/                   # 画面遷移や処理の入口（MVCのC）
+│   │   │       │   ├── HomeController.java
+│   │   │       │   ├── LoginController.java
+│   │   │       │   ├── AttendanceController.java
+│   │   │       │   ├── FlowerController.java
+│   │   │       │   └── AdminController.java
+│   │   │       ├── model/                        # データ構造定義（Entity：MVCのM）
+│   │   │       │   ├── User.java
+│   │   │       │   ├── Seed.java
+│   │   │       │   ├── Flower.java
+│   │   │       │   ├── Attendance.java
+│   │   │       │   ├── GrowthState.java
+│   │   │       │   └── SeedLog.java
+│   │   │       ├── repository/                   # DBアクセス層
+│   │   │       │   ├── UserRepository.java
+│   │   │       │   ├── SeedRepository.java
+│   │   │       │   ├── FlowerRepository.java
+│   │   │       │   ├── AttendanceRepository.java
+│   │   │       │   ├── GrowthStateRepository.java
+│   │   │       │   └── SeedLogRepository.java
+│   │   │       └── service/                      # ビジネスロジック
+│   │   │           ├── SeedService.java
+│   │   │           ├── LoginBonusService.java
+│   │   │           ├── GrowthService.java
+│   │   │           └── FlowerService.java
+│   │   └── resources/
+│   │       ├── static/                           # 静的ファイル（CSS・画像など）
+│   │       │   └── css/
+│   │       │       └── login.css
+│   │       ├── templates/                        # Thymeleafテンプレート
+│   │       │   ├── login.html
+│   │       │   └── home.html
+│   │       └── application.properties            # アプリケーション設定
+│
+└── pom.xml（ビルド定義ファイル）
+
+
+🧾 機能別ファイル対応表（簡易一覧）
+分類	機能	主なファイル（例）
+ログイン	ログイン処理・ボーナス付与	LoginController, LoginBonusService, User
+ホーム画面	トップページ表示・花一覧	HomeController, home.html, FlowerService
+勤怠管理	日付の記録、打刻ボタン	AttendanceController, AttendanceService, Attendance
+育成	種の取得・成長・成長状態保存	SeedService, GrowthService, Seed, GrowthState, SeedLog
+図鑑表示	咲いた花の一覧、レア度表示	FlowerController, flowerbook.html, Flower
+カレンダー	過去勤怠・開花履歴表示	calendar.html（＋コントローラー未実装？）
+管理者	ユーザー管理・添削機能	AdminController, admin.html
+
+💡補足ポイント
+@Entityのあるクラス（例：User, Seed）はDBと連携
+
+RepositoryはSpring Data JPAが自動で実装
+
+Serviceが主なビジネス処理（育成、成長、ボーナスなど）を担う
+
+Controllerが各画面（HTML）との橋渡し
+
+resources/templates/ に Thymeleaf 用 HTML を置く（例：home.html）
+
+CSS や画像は resources/static/ に配置
+
+
+
+zipファイルを添付するので続きから作るのを手伝って
